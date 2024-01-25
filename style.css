@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: var(--Light_Cyan);
+    a{
+        text-decoration: none;
+    }
+}
+:root{
+
+    /*Colors - Primary*/
+    --Light_Cyan: hsl(193, 38%, 86%);
+    --Neon_Green: hsl(150, 100%, 66%);
+
+    /*Neutral*/
+    --Grayish_Blue: hsl(217, 19%, 38%);
+    --Dark_Grayish_Blue: hsl(217, 19%, 24%);
+    --Dark_Blue: hsl(218, 23%, 16%);
+    /**/
+
+}
+
+body,html{
+height: 100vh;
+}
+
+body{
+    background: var(--Dark_Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: var(--Dark_Grayish_Blue);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 20px;
+    border-radius: 0.7rem;
+}
+h3, span{
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: var(--Neon_Green);
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.6rem;
+}
+.content-wrapper{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+h1{
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+#img-mobile{
+    display: block;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+#img-desktop{
+    display: none;
+}
+.diceBtn{
+position: absolute;
+bottom: -25px;
+right: 43%;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #53FFAB;
+z-index: 1000;
+border: none;
+}
+
+.attribution { font-size: 1rem; text-align: center;
+color: var(--Light_Cyan); }
+.attribution a { color: var(--Dark_Grayish_Blue); }
+.attribution a:hover{
+    color: var(--Light_Cyan);
+    transition: .6s ease-in;
+    font-weight: 800;
+}
+@media screen and (min-width: 636px) {
+    .container{
+        width: 500px ;
+    }
+    .diceBtn{
+        right: 45%;
+    }
+}
